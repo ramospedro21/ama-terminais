@@ -1,7 +1,7 @@
 <template>
   <section
     id="quem-somos"
-    class="relative z-10 bg-[#000738] text-white pt-20 pb-28"
+    class="relative z-10 bg-[#000738] text-white pt-20 pb-28 scroll-mt-36"
   >
     <div class="max-w-7xl mx-auto px-6">
       <div class="grid md:grid-cols-2 gap-16 md:gap-24">

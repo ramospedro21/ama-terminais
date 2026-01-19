@@ -1,5 +1,5 @@
 <template>
-  <section class="relative min-h-screen pt-32 pb-24 flex items-center overflow-hidden" id="hero">
+  <section class="relative min-h-screen pt-32 pb-24 flex items-center overflow-hidden" id="hero" >
     <!-- IMAGEM DE FUNDO -->
     <img
       src="/images/hero-containers.jpg"

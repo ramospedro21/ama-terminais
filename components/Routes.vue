@@ -1,8 +1,8 @@
 <template>
   <section
-    id="lcl-rotas"
+    id="rotas"
     aria-labelledby="lcl-rotas-title"
-    class="bg-[#000738] py-16 sm:py-20"
+    class="bg-[#000738] py-16 sm:py-20 scroll-mt-32"
   >
     <div class="mx-auto max-w-[1600px] px-6">
       <div
@@ -35,13 +35,14 @@
         <div class="mt-8 space-y-10 lg:mt-12 lg:space-y-12">
           <!-- MSL -->
           <section class="grid grid-cols-1 gap-6 lg:grid-cols-[240px_1fr] lg:gap-16 lg:items-center" aria-labelledby="op-msl">
+            <!-- logo desktop -->
             <div class="hidden lg:flex min-h-[140px] items-center justify-center">
               <img
                 src="/images/partners/msl.png"
                 alt="MSL Group"
                 width="220"
                 height="96"
-                class="h-[96px] w-auto max-w-[220px] object-contain opacity-95"
+                class="h-[120px] sm:h-[140px] lg:h-[160px] w-auto max-w-[300px] lg:max-w-[360px] object-contain opacity-95"
                 loading="lazy"
                 decoding="async"
                 fetchpriority="high"
@@ -49,9 +50,21 @@
             </div>
 
             <div class="min-w-0">
-              <h3 id="op-msl" class="mb-4 block text-xl font-extrabold uppercase tracking-wide text-white lg:hidden">
-                MSL Group
-              </h3>
+              <!-- mobile header (logo um pouco maior, sem afastar muito as pills) -->
+              <div class="mb-3 flex items-center gap-2.5 lg:hidden">
+                <img
+                  src="/images/partners/msl.png"
+                  alt="MSL Group"
+                  width="72"
+                  height="72"
+                  class="h-9 w-9 shrink-0 object-contain opacity-95"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 id="op-msl" class="text-xl font-extrabold uppercase tracking-wide text-white">
+                  MSL Group
+                </h3>
+              </div>
 
               <div class="grid grid-cols-1 gap-8 md:grid-cols-2 lg:gap-16">
                 <!-- rotas MSL (com bracket) -->
@@ -70,27 +83,40 @@
                   </ul>
                 </div>
 
-                <!-- FAM dentro da mesma linha -->
+                <!-- FAM -->
                 <section
                   class="grid grid-cols-1 lg:ml-[-50px] lg:grid-cols-[160px_minmax(0,1fr)] lg:gap-8 lg:items-center"
                   aria-labelledby="op-fam"
                 >
+                  <!-- logo desktop -->
                   <div class="hidden lg:flex min-h-[140px] items-center justify-center">
                     <img
                       src="/images/partners/fam.png"
                       alt="FAM"
                       width="140"
                       height="96"
-                      class="h-[96px] w-auto max-w-[140px] object-contain opacity-95"
+                      class="h-[120px] sm:h-[140px] lg:h-[160px] w-auto max-w-[300px] lg:max-w-[360px] object-contain opacity-95"
                       loading="lazy"
                       decoding="async"
                     />
                   </div>
 
                   <div class="min-w-0">
-                    <h3 id="op-fam" class="mb-4 block text-xl font-extrabold uppercase tracking-wide text-white lg:hidden">
-                      FAM
-                    </h3>
+                    <!-- mobile header (logo um pouco maior, sem afastar muito as pills) -->
+                    <div class="mb-3 flex items-center gap-2.5 lg:hidden">
+                      <img
+                        src="/images/partners/fam.png"
+                        alt="FAM"
+                        width="72"
+                        height="72"
+                        class="h-9 w-9 shrink-0 object-contain opacity-95"
+                        loading="lazy"
+                        decoding="async"
+                      />
+                      <h3 id="op-fam" class="text-xl font-extrabold uppercase tracking-wide text-white">
+                        FAM
+                      </h3>
+                    </div>
 
                     <div
                       class="relative min-w-0 pl-7
@@ -108,7 +134,74 @@
                     </div>
                   </div>
                 </section>
+              </div>
 
+              <div class="mt-5 space-y-7 md:hidden">
+                <!-- MSL -->
+                <div>
+                  <!-- header fora do bracket -->
+                  <div class="mb-2.5 flex items-center gap-2.5">
+                    <img
+                      src="/images/partners/msl.png"
+                      alt="MSL Group"
+                      width="72"
+                      height="72"
+                      class="h-9 w-9 shrink-0 object-contain opacity-95"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <p class="text-sm font-extrabold uppercase tracking-wide text-white/90">MSL Group</p>
+                  </div>
+
+                  <!-- bracket envolve só as pills -->
+                  <div
+                    class="relative pl-7
+                          before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
+                          before:rounded-l-[1.75rem]
+                          before:border-l-2 before:border-y-2 before:border-white/20
+                          before:border-r-0"
+                  >
+                    <ul class="space-y-3 w-full max-w-[290px]" aria-label="Rotas MSL Group (mobile)">
+                      <li><RoutePill country="CHINA" city="SHANGHAI" /></li>
+                      <li><RoutePill country="CHINA" city="NINGBO" /></li>
+                      <li><RoutePill country="CHINA" city="HONG KONG" /></li>
+                      <li><RoutePill country="CHINA" city="GENOVA" /></li>
+                    </ul>
+                  </div>
+                </div>
+
+                <!-- FAM -->
+                <div>
+                  <!-- header fora do bracket -->
+                  <div class="mb-2.5 flex items-center gap-2.5">
+                    <img
+                      src="/images/partners/fam.png"
+                      alt="FAM"
+                      width="72"
+                      height="72"
+                      class="h-9 w-9 shrink-0 object-contain opacity-95"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                    <p class="text-sm font-extrabold uppercase tracking-wide text-white/90">FAM</p>
+                  </div>
+
+                  <!-- bracket envolve só as pills -->
+                  <div
+                    class="relative pl-7
+                          before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
+                          before:rounded-l-[1.75rem]
+                          before:border-l-2 before:border-y-2 before:border-white/20
+                          before:border-r-0"
+                  >
+                    <ul class="space-y-3 w-full max-w-[290px]" aria-label="Rotas FAM (mobile)">
+                      <li><RoutePill country="CHINA" city="SHANGHAI" /></li>
+                      <li><RoutePill country="CHINA" city="NINGBO" /></li>
+                      <li><RoutePill country="CHINA" city="SINGAPURA" /></li>
+                      <li><RoutePill country="CHINA" city="HAMBURGO" /></li>
+                    </ul>
+                  </div>
+                </div>
               </div>
             </div>
           </section>
@@ -121,41 +214,52 @@
                 alt="World Freight"
                 width="220"
                 height="96"
-                class="h-[96px] w-auto max-w-[220px] object-contain opacity-95"
+                class="h-[120px] sm:h-[140px] lg:h-[160px] w-auto max-w-[300px] lg:max-w-[360px] object-contain opacity-95"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="min-w-0">
-              <h3 id="op-world" class="mb-4 block text-xl font-extrabold uppercase tracking-wide text-white lg:hidden">
-                World Freight
-              </h3>
+              <div class="mb-3 flex items-center gap-2.5 lg:hidden">
+                <img
+                  src="/images/partners/world-freight.png"
+                  alt="World Freight"
+                  width="72"
+                  height="72"
+                  class="h-9 w-9 shrink-0 object-contain opacity-95"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 id="op-world" class="text-xl font-extrabold uppercase tracking-wide text-white">
+                  World Freight
+                </h3>
+              </div>
 
-              <div class="grid grid-cols-1 items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10" aria-label="Rotas World Freight">
-                <div
-                  class="relative pl-7
-                         before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
-                         before:rounded-l-[1.75rem]
-                         before:border-l-2 before:border-y-2 before:border-white/20
-                         before:border-r-0"
-                >
+              <div
+                class="relative pl-7
+                      before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
+                      before:rounded-l-[1.75rem]
+                      before:border-l-2 before:border-y-2 before:border-white/20
+                      before:border-r-0"
+              >
+                <div class="grid grid-cols-1 items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10" aria-label="Rotas World Freight">
                   <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
                     <li><RoutePill country="CHINA" city="SHANGHAI" /></li>
                     <li><RoutePill country="CHINA" city="NINGBO" /></li>
                     <li><RoutePill country="CHINA" city="HONG KONG" /></li>
                   </ul>
+
+                  <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
+                    <li><RoutePill country="CHINA" city="SHENZHEN" /></li>
+                    <li><RoutePill country="CHINA" city="QINGDAO" /></li>
+                    <li><RoutePill country="COREIA DO SUL" city="BUSAN" /></li>
+                  </ul>
+
+                  <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
+                    <li><RoutePill country="ÍNDIA" city="NHAVA SHEVA" /></li>
+                  </ul>
                 </div>
-
-                <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
-                  <li><RoutePill country="CHINA" city="SHENZHEN" /></li>
-                  <li><RoutePill country="CHINA" city="QINGDAO" /></li>
-                  <li><RoutePill country="COREIA DO SUL" city="BUSAN" /></li>
-                </ul>
-
-                <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
-                  <li><RoutePill country="ÍNDIA" city="NHAVA SHEVA" /></li>
-                </ul>
               </div>
             </div>
           </section>
@@ -168,39 +272,50 @@
                 alt="South Cargo"
                 width="220"
                 height="96"
-                class="h-[96px] w-auto max-w-[220px] object-contain opacity-95"
+                class="h-[120px] sm:h-[140px] lg:h-[160px] w-auto max-w-[300px] lg:max-w-[360px] object-contain opacity-95"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="min-w-0">
-              <h3 id="op-south" class="mb-4 block text-xl font-extrabold uppercase tracking-wide text-white lg:hidden">
-                South Cargo
-              </h3>
+              <div class="mb-3 flex items-center gap-2.5 lg:hidden">
+                <img
+                  src="/images/partners/south-cargo.png"
+                  alt="South Cargo"
+                  width="72"
+                  height="72"
+                  class="h-9 w-9 shrink-0 object-contain opacity-95"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 id="op-south" class="text-xl font-extrabold uppercase tracking-wide text-white">
+                  South Cargo
+                </h3>
+              </div>
 
-              <div class="grid grid-cols-1 items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10" aria-label="Rotas South Cargo">
-                <div
-                  class="relative pl-7
-                         before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
-                         before:rounded-l-[1.75rem]
-                         before:border-l-2 before:border-y-2 before:border-white/20
-                         before:border-r-0"
-                >
+              <div
+                class="relative pl-7
+                      before:absolute before:left-0 before:top-[6px] before:bottom-[6px] before:w-[18px]
+                      before:rounded-l-[1.75rem]
+                      before:border-l-2 before:border-y-2 before:border-white/20
+                      before:border-r-0"
+              >
+                <div class="grid grid-cols-1 items-start gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-10" aria-label="Rotas South Cargo">
                   <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
                     <li><RoutePill country="CHINA" city="SHANGHAI" /></li>
                     <li><RoutePill country="CHINA" city="NINGBO" /></li>
                   </ul>
+
+                  <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
+                    <li><RoutePill country="CHINA" city="HONG KONG" /></li>
+                    <li><RoutePill country="CHINA" city="SHENZHEN" /></li>
+                  </ul>
+
+                  <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
+                    <li><RoutePill country="CHINA" city="QINGDAO" /></li>
+                  </ul>
                 </div>
-
-                <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
-                  <li><RoutePill country="CHINA" city="HONG KONG" /></li>
-                  <li><RoutePill country="CHINA" city="SHENZHEN" /></li>
-                </ul>
-
-                <ul class="space-y-3 w-full max-w-[290px] lg:w-[290px] lg:max-w-none">
-                  <li><RoutePill country="CHINA" city="QINGDAO" /></li>
-                </ul>
               </div>
             </div>
           </section>
@@ -213,16 +328,27 @@
                 alt="AMASS"
                 width="220"
                 height="96"
-                class="h-[96px] w-auto max-w-[220px] object-contain opacity-95"
+                class="h-[120px] sm:h-[140px] lg:h-[160px] w-auto max-w-[300px] lg:max-w-[360px] object-contain opacity-95"
                 loading="lazy"
                 decoding="async"
               />
             </div>
 
             <div class="min-w-0">
-              <h3 id="op-amass" class="mb-4 block text-xl font-extrabold uppercase tracking-wide text-white lg:hidden">
-                AMASS
-              </h3>
+              <div class="mb-3 flex items-center gap-2.5 lg:hidden">
+                <img
+                  src="/images/partners/amass.png"
+                  alt="AMASS"
+                  width="72"
+                  height="72"
+                  class="h-9 w-9 shrink-0 object-contain opacity-95"
+                  loading="lazy"
+                  decoding="async"
+                />
+                <h3 id="op-amass" class="text-xl font-extrabold uppercase tracking-wide text-white">
+                  AMASS
+                </h3>
+              </div>
 
               <div
                 class="relative max-w-md pl-7
