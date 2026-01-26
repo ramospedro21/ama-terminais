@@ -20,6 +20,7 @@ useSeoMeta({
     <Services />
     <Partners />
     <Routes />
+    <Terminals />
     <Contact />
   </main>
 

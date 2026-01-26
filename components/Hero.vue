@@ -12,7 +12,7 @@
     <!-- CONTEÚDO -->
     <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
       <div class="max-w-3xl">
-        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl leading-tight italic animate-fade-up">
+        <h1 class="text-white text-4xl sm:text-5xl md:text-6xl leading-tight italic animate-fade-up delay-150">
           <span class="block font-light">Estamos</span>
           <span class="block font-light">prontos para</span>
           <span class="block">
@@ -21,6 +21,10 @@
           </span>
           <span class="block font-extrabold">carga</span>
         </h1>
+        <p class="mt-6 max-w-2xl text-white/75 text-xl md:text-2xl font-light leading-relaxed animate-fade-up delay-150">
+          Pronto para tirar seu projeto do papel<br> 
+          ou agilizar sua cadeia logística?
+        </p>
         <a
           href="#contato"
           class="inline-flex items-center mt-8 md:mt-10 bg-transparent text-white

@@ -1,4 +1,5 @@
 export default defineNuxtConfig({
+  nitro: { preset: 'static' },
   app: {
     head: {
       htmlAttrs: { lang: 'pt-BR' }

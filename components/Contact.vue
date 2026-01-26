@@ -1,15 +1,15 @@
 <template>
   <section id="contato" class="relative bg-white">
     <div class="max-w-7xl mx-auto px-6 py-20">
-      <div class="grid gap-16 lg:grid-cols-2 items-start">
+      <img
+        src="/images/logo-ama-terminais.svg"
+        alt="Ama Terminais"
+        class="h-20 object-contain"
+      />
+      <div class="grid lg:grid-cols-2 items-start">
         <!-- COLUNA ESQUERDA -->
         <div>
           <!-- Logo -->
-          <img
-            src="/images/logo-ama-terminais.svg"
-            alt="Ama Terminais"
-            class="h-14 object-contain"
-          />
           <!-- Título -->
           <h2 class="mt-16 text-[#000738] text-5xl md:text-6xl font-extrabold italic leading-tight">
             Entre em contato
@@ -71,35 +71,39 @@
           </ul>
         </div>
         <!-- COLUNA DIREITA (FORM) -->
-        <div class="w-full max-w-xl lg:ml-auto">
-          <form class="space-y-8">
+        <div class="w-full max-w-[420px] mt-5 pt-5">
+          <form class="space-y-4">
             <div>
-              <label class="block text-[#000738] text-2xl font-extrabold mb-3">
+              <label class="block text-[#000738] text-lg font-extrabold mb-1">
                 Nome completo
               </label>
-              <input type="text" class="field" />
+              <input type="text" class="field py-2.5 px-4 text-sm" />
             </div>
+
             <div>
-              <label class="block text-[#000738] text-2xl font-extrabold mb-3">
+              <label class="block text-[#000738] text-lg font-extrabold mb-1">
                 Telefone
               </label>
-              <input type="tel" class="field" />
+              <input type="tel" class="field py-2.5 px-4 text-sm" />
             </div>
+
             <div>
-              <label class="block text-[#000738] text-2xl font-extrabold mb-3">
+              <label class="block text-[#000738] text-lg font-extrabold mb-1">
                 Email
               </label>
-              <input type="email" class="field" />
+              <input type="email" class="field py-2.5 px-4 text-sm" />
             </div>
+
             <div>
-              <label class="block text-[#000738] text-2xl font-extrabold mb-3">
+              <label class="block text-[#000738] text-lg font-extrabold mb-1">
                 Escreva sua mensagem
               </label>
-              <textarea rows="5" class="field resize-none"></textarea>
+              <textarea rows="3" class="field resize-none py-2.5 px-4 text-sm"></textarea>
             </div>
+
             <button
               type="submit"
-              class="inline-flex items-center justify-center bg-[#000738] text-white px-10 py-4 rounded-full font-semibold transition-all duration-300 hover:bg-[#02085a]"
+              class="inline-flex items-center justify-center bg-[#000738] text-white px-8 py-3 rounded-full font-semibold transition-all duration-300 hover:bg-[#02085a]"
             >
               Enviar
             </button>

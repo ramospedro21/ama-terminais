@@ -16,15 +16,6 @@
       <div class="grid gap-8 md:grid-cols-3">
         <!-- ✅ cards mais baixos: menos padding e min-height menor -->
         <article class="rounded-[36px] bg-[#5c6b73] text-white p-8 md:p-9 min-h-[340px]">
-          <h3 class="text-2xl font-extrabold mb-2">Transporte Rodoviário</h3>
-          <p class="italic text-white/90 mb-6">LTL/FTL - DTA - Aeroportos</p>
-          <p class="text-lg leading-relaxed text-white/90">
-            Serviços de transporte rodoviário ágeis e seguros, cobrindo amplamente
-            todo o território nacional.
-          </p>
-        </article>
-
-        <article class="rounded-[36px] bg-[#000738] text-white p-8 md:p-9 min-h-[340px]">
           <h3 class="text-2xl font-extrabold mb-2">Armazenagem</h3>
           <p class="italic text-white/90 mb-6">Alfândegada - LCL/FCL - Geral</p>
           <p class="text-lg leading-relaxed text-white/90">
@@ -33,11 +24,20 @@
           </p>
         </article>
 
+        <article class="rounded-[36px] bg-[#000738] text-white p-8 md:p-9 min-h-[340px]">
+          <h3 class="text-2xl font-extrabold mb-2">Transporte</h3>
+          <p class="italic text-white/90 mb-6">Rodoviário / LTL / FTL / DTA / Aeroportos</p>
+          <p class="text-lg leading-relaxed text-white/90">
+            Serviços de transporte rodoviário ágeis e seguros, cobrindo amplamente
+            todo o território nacional.
+          </p>
+        </article>
+
         <article class="rounded-[36px] bg-[#5c6b73] text-white p-8 md:p-9 min-h-[340px]">
           <h3 class="text-2xl font-extrabold mb-2">Projetos</h3>
-          <p class="italic text-white/90 mb-6">Cargas BreakBulk</p>
+          <p class="italic text-white/90">Cargas BreakBulk</p>
+          <p class="italic text-white/90 mb-6">Cargas com excessos de peso ou dimensões</p>
           <ul class="space-y-3 text-lg text-white/90">
-            <li>Cargas com excessos de peso ou dimensões</li>
             <li>Especializados em cargas especiais e projetos complexos</li>
           </ul>
         </article>
@@ -59,11 +59,11 @@
       <div
         class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-12 items-center justify-items-center"
       >
-        <img src="/images/partners/fam.png" alt="FAM" class="h-24 max-h-36 h-full object-contain" />
-        <img src="/images/partners/world-freight.png" alt="World Freight" class="h-24 max-h-36 h-full object-contain" />
-        <img src="/images/partners/south-cargo.png" alt="South Cargo" class="h-24 max-h-36 h-full object-contain" />
-        <img src="/images/partners/amass.png" alt="AMASS" class="h-24 max-h-36 h-full object-contain" />
-        <img src="/images/partners/msl.png" alt="MSL Group" class="h-24 max-h-36 h-full object-contain" />
+        <img src="/images/partners/fam.png" alt="FAM" class="h-32 md:h-40 w-auto object-contain" />
+        <img src="/images/partners/world-freight.png" alt="World Freight" class="h-32 md:h-40 w-auto object-contain" />
+        <img src="/images/partners/south-cargo.png" alt="South Cargo" class="h-32 md:h-40 w-auto object-contain" />
+        <img src="/images/partners/amass.png" alt="AMASS" class="h-32 md:h-40 w-auto object-contain" />
+        <img src="/images/partners/msl.png" alt="MSL Group" class="h-32 md:h-40 w-auto object-contain" />
       </div>
     </div>
   </section>

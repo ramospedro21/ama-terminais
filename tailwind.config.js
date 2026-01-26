@@ -7,7 +7,11 @@ content: [
   "./plugins/**/*.{js,ts}",
 ],
 theme: {
-  extend: {},
+  extend: {
+    fontFamily: {
+      sans: ['Helvetica Now Display', 'Helvetica', 'Arial', 'sans-serif'],
+    },
+  },
 },
 variants: {
   extend: {},
