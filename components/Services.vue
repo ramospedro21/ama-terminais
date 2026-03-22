@@ -1,8 +1,5 @@
 <template>
-  <section id="servicos" class="relative bg-white pt-20 pb-28 overflow-hidden scroll-mt-32">
-    <!-- faixa azul de baixo (mantém o “encoste” do card sobre o azul) -->
-    <div class="absolute inset-x-0 bottom-0 h-56 bg-[#000a53]"></div>
-
+  <section id="servicos" class="relative bg-white pt-20 pb-20 overflow-hidden scroll-mt-32">
     <div class="relative z-10 max-w-7xl mx-auto px-6">
       <header class="mb-16">
         <span class="block text-[#000738] text-2xl font-extrabold uppercase tracking-wide">
@@ -13,57 +10,65 @@
         </h2>
       </header>
 
-      <div class="grid gap-8 md:grid-cols-3">
-        <!-- ✅ cards mais baixos: menos padding e min-height menor -->
-        <article class="rounded-[36px] bg-[#5c6b73] text-white p-8 md:p-9 min-h-[340px]">
-          <h3 class="text-2xl font-extrabold mb-2">Armazenagem</h3>
-          <p class="italic text-white/90 mb-6">Alfândegada - LCL/FCL - Geral</p>
-          <p class="text-lg leading-relaxed text-white/90">
-            Soluções de armazenagem seguras, garantindo a integridade e a gestão
-            adequada de seus produtos.
+      <div class="flex flex-col gap-6">
+
+        <!-- Card Armazenagem -->
+        <article class="flex flex-col">
+          <!-- Topo: card azul — fica por cima via z-index e sombra -->
+          <div class="relative z-10 rounded-[24px] bg-[#000738] text-white p-8 md:p-10 flex flex-col gap-3 shadow-xl">
+            <h3 class="text-2xl font-extrabold">Armazenagem</h3>
+            <p class="italic text-white text-md">Alfândegada - LCL/FCL - Geral</p>
+            <p class="text-white text-md leading-relaxed">
+              Soluções de armazenagem seguras, garantindo a <br>
+              integridade e a gestão adequada de seus produtos.
+            </p>
+          </div>
+
+          <!-- Baixo: bloco cinza sobe por baixo do azul -->
+          <div class="-mt-6 pt-10 rounded-b-[24px] bg-[#5c6b73] text-white px-8 md:px-10 pb-8 md:pb-10 flex flex-col gap-4">
+            <p class="font-bold text-white text-base">Soluções para Comércio Exterior</p>
+            <p class="text-white text-md leading-relaxed">
+              Gerimos com segurança seus processos de importação e exportação em áreas
+              alfandegadas, oferecendo regimes especiais e controle aduaneiro integrado para sua carga.
+            </p>
+            <ul class="space-y-3 text-md text-white">
+              <li>
+                <span class="font-bold text-white">LCL - Consolidada:</span>
+                Ideal para otimizar custos em embarques de menor volume, tanto na importação quanto na exportação.
+              </li>
+              <li>
+                <span class="font-bold text-white">FCL - Completa:</span>
+                Segurança e exclusividade para sua carga fechada, com gestão dedicada desde o container até a entrega final.
+              </li>
+            </ul>
+          </div>
+        </article>
+
+        <!-- Card Transporte -->
+        <article class="rounded-[24px] bg-[#010953] text-white p-8 md:p-10 flex flex-col gap-3">
+          <h3 class="text-2xl font-extrabold">Transporte</h3>
+          <p class="italic text-white text-md">Rodoviário / LTL / FTL / DTA / Aeroportos</p>
+          <p class="font-bold text-white mt-2">Transporte LTL (Lotação Fracionada) e FTL (Lotação Completa).</p>
+          <p class="text-white text-md leading-relaxed">
+            Soluções rodoviárias ágeis para distribuição e coleta de cargas de importação e
+            exportação, conectando portos, aeroportos e seu destino final. Especialistas em
+            fracionado (LTL) para otimizar sua logística doméstica e internacional.
           </p>
         </article>
 
-        <article class="rounded-[36px] bg-[#000738] text-white p-8 md:p-9 min-h-[340px]">
-          <h3 class="text-2xl font-extrabold mb-2">Transporte</h3>
-          <p class="italic text-white/90 mb-6">Rodoviário / LTL / FTL / DTA / Aeroportos</p>
-          <p class="text-lg leading-relaxed text-white/90">
-            Serviços de transporte rodoviário ágeis e seguros, cobrindo amplamente
-            todo o território nacional.
+        <!-- Card Projetos -->
+        <article class="rounded-[24px] bg-[#000738] text-white p-8 md:p-10 flex flex-col gap-3">
+          <h3 class="text-2xl font-extrabold">Projetos</h3>
+          <p class="italic text-white text-md">Cargas BreakBulk</p>
+          <p class="italic text-white text-md">Cargas com excessos de peso ou dimensões</p>
+          <p class="font-bold text-white mt-2">Projetos Especiais e BreakBulk</p>
+          <p class="text-white text-md leading-relaxed">
+            Atuamos na recepção, manuseio e embarque de equipamentos industriais, peças
+            superdimensionadas e cargas fora dos padrões convencionais, garantindo segurança
+            e planejamento em cada etapa.
           </p>
         </article>
 
-        <article class="rounded-[36px] bg-[#5c6b73] text-white p-8 md:p-9 min-h-[340px]">
-          <h3 class="text-2xl font-extrabold mb-2">Projetos</h3>
-          <p class="italic text-white/90">Cargas BreakBulk</p>
-          <p class="italic text-white/90 mb-6">Cargas com excessos de peso ou dimensões</p>
-          <ul class="space-y-3 text-lg text-white/90">
-            <li>Especializados em cargas especiais e projetos complexos</li>
-          </ul>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section class="bg-[#000a53] pt-16 pb-28 scroll-mt-40" id="parceiros">
-    <div class="max-w-7xl mx-auto px-6 -mt-10">
-      <div class="text-center mb-20">
-        <span class="block text-white text-4xl md:text-5xl font-extrabold">
-          LCL
-        </span>
-        <h2 class="text-white text-4xl md:text-5xl font-extrabold mt-2">
-          Parceiros estratégicos
-        </h2>
-      </div>
-
-      <div
-        class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-12 items-center justify-items-center"
-      >
-        <img src="/images/partners/fam.png" alt="FAM" class="h-32 md:h-40 w-auto object-contain" />
-        <img src="/images/partners/world-freight.png" alt="World Freight" class="h-32 md:h-40 w-auto object-contain" />
-        <img src="/images/partners/south-cargo.png" alt="South Cargo" class="h-32 md:h-40 w-auto object-contain" />
-        <img src="/images/partners/amass.png" alt="AMASS" class="h-32 md:h-40 w-auto object-contain" />
-        <img src="/images/partners/msl.png" alt="MSL Group" class="h-32 md:h-40 w-auto object-contain" />
       </div>
     </div>
   </section>

@@ -6,6 +6,7 @@
         <div>
           <h2 class="mt-16 text-[#000738] text-5xl md:text-6xl font-extrabold italic leading-tight">Entre em contato</h2>
           <p class="mt-4 text-[#000738] text-xl">Estamos prontos para receber sua carga</p>
+          <p class="text-[#000738] text-xl font-bold">Fale conosco</p>
 
           <ul class="mt-14 space-y-6 text-[#000738]">
             <li class="flex items-center gap-5">

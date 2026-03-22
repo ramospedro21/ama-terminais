@@ -18,9 +18,6 @@ useSeoMeta({
     <Hero />
     <About />
     <Services />
-    <Partners />
-    <Routes />
-    <Terminals />
     <Contact />
   </main>
 
