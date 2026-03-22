@@ -36,16 +36,6 @@ const open = ref(false)
               Serviços
             </a>
           </li>
-          <li>
-            <a href="#parceiros" class="transition-colors duration-300 hover:text-blue-600">
-              Parceiros
-            </a>
-          </li>
-          <li>
-            <a href="#rotas" class="transition-colors duration-300 hover:text-blue-600">
-              Rotas
-            </a>
-          </li>
         </ul>
 
         <!-- CTA integrado -->
@@ -97,29 +87,11 @@ const open = ref(false)
             </a>
           </li>
           <li>
-            <a 
-              @click="open=false" 
-              href="#parceiros"
-              class="block transition-colors duration-300 hover:text-blue-600"
-            >
-              Parceiros
-            </a>
-          </li>
-          <li>
-            <a 
-              @click="open=false" 
-              href="#rotas"
-              class="block transition-colors duration-300 hover:text-blue-600"
-            >
-              Rotas
-            </a>
-          </li>
-          <li>
-          <a
-              @click="open=false"
-              href="#contato"
-              class="block bg-blue-900 text-white py-3 rounded-full text-center
-                     transition-all duration-300 hover:bg-[#02085a] hover:shadow-lg"
+            <a
+                @click="open=false"
+                href="#contato"
+                class="block bg-blue-900 text-white py-3 rounded-full text-center
+                      transition-all duration-300 hover:bg-[#02085a] hover:shadow-lg"
             >
               Entre em contato
             </a>

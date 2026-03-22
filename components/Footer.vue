@@ -4,7 +4,7 @@
       <div class="flex justify-center items-center gap-6">
         <!-- LinkedIn -->
         <a
-          href="https://www.linkedin.com"
+          href="https://www.linkedin.com/company/amaterminais/about/"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white hover:text-white/80 transition-colors duration-300"
@@ -22,7 +22,7 @@
 
         <!-- Instagram -->
         <a
-          href="https://www.instagram.com"
+          href="https://www.instagram.com/ama.terminais"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white hover:text-white/80 transition-colors duration-300"
@@ -40,7 +40,7 @@
 
         <!-- Facebook -->
         <a
-          href="https://www.facebook.com"
+          href="https://www.facebook.com/profile.php?id=61585445936212"
           target="_blank"
           rel="noopener noreferrer"
           class="text-white hover:text-white/80 transition-colors duration-300"

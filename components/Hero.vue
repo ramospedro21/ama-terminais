@@ -36,8 +36,8 @@
         </a>
       </div>
     </div>
-    <!-- ONDA NO FINAL (mais baixa para mostrar mais da foto) -->
-    <div class="pointer-events-none absolute inset-x-0 -bottom-12 z-30 h-24 sm:h-32 md:h-40">
+    <!-- ONDA NO FINAL (suavizada na esquerda) -->
+    <div class="pointer-events-none absolute inset-x-0 -bottom-1 z-30 h-24 sm:h-32 md:h-40">
       <svg
         class="block h-full w-full"
         viewBox="0 0 1440 160"
@@ -45,9 +45,9 @@
         xmlns="http://www.w3.org/2000/svg"
         aria-hidden="true"
       >
-        <!-- Onda otimizada -->
+        <!-- Onda com início suavizado -->
         <path
-          d="M0,30 C200,190 600,70 1000,20 C1150,10 1280,35 1440,50 L1440,160 L0,160 Z"
+          d="M0,60 C100,100 200,150 400,110 C600,70 800,40 1000,20 C1150,10 1280,35 1440,50 L1440,160 L0,160 Z"
           fill="#000738"
         />
       </svg>
