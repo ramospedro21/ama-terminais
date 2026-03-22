@@ -21,9 +21,12 @@
           </span>
           <span class="block font-extrabold">carga</span>
         </h1>
-        <p class="mt-6 max-w-2xl text-white/75 text-xl md:text-2xl font-light leading-relaxed animate-fade-up delay-150">
-          Pronto para tirar seu projeto do papel<br> 
-          ou agilizar sua cadeia logística?
+        <p class="mt-6 max-w-2xl text-white text-xl md:text-2xl font-light leading-relaxed animate-fade-up delay-150">
+          Descomplique sua importação e exportação 
+        </p>
+        <p class="mt-6 max-w-xl text-white/75 text-xl md:text-xl font-light leading-relaxed animate-fade-up delay-150">
+          Operamos com armazenagem alfandegada, gestão de cargas LCL e FCL, transporte LTL,
+          compartilhado e dedicado, FTL, além de cargas projeto e break bulk.
         </p>
         <a
           href="#contato"
